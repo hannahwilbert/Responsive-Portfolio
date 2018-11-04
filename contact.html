@@ -1,68 +1,60 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en-us">
 <head>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <title>Hannah's Portfolio</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hannah Wilbert</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
-
 <body>
-    <div class="container">
-    <!-- START HEADER -->
-    <div class="header_wrapper">
-        <div class="header_name">
-            <h1>Hannah Wilbert</h1>
-        </div>
-        <div class="header_link">
-            <div>
-                <a href="index.html">About  |   </a>
-                <a href="portfolio.html">Portfolio  |   </a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <div class="header_border">
-            <section></section>
-        </div>
-        <!-- END HEADER -->
-        <!-- START MAIN CONTENT -->
-      
-        <div class="contact_wrapper">
-            <div class="contact_form">
-                <h2 class="contact_title">Contact</h2>
-               
-                <form action="">
-                    Name
-                <input type="text" name="fullname"> Email
-                    <input type="text" name="email"> Message
-                    <textarea class="contact_message"></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div></div>
-  
-      
-            <!-- END MAIN CONTENT -->
-            <!-- START CONNECT -->
-            <div class="connect">
-                <div class="connect_title">
-                    <h2>Connect with Me</h2>
-                </div>
-                <div class="connect_links">
-                    <a class="connect_link1" href="https://github.com" target="_newpage"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_square_black-128.png" alt="" height= 65px></a>
-                    <a class="connect_link2" href="https://www.linkedin.com" target="_newpage"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_square_color-128.png" alt="" height= 65px></a>
-                    <a class="connect_link3" href="https://stackoverflow.com" target="_blankpage"><img src="https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/overflow-128.png" target="_blankpage" alt="" height= 58px></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--END CONENECT -->
-    <!-- START COPYRIGHT -->
-    <div class="copyright" style="clear:both">
-        <p>©Copyright 2018 Hannah Wilbert</p>
-    </div>
-    <!-- END COPYRIGHT -->
-</div>
-</body>
 
+<div class="wrapper">
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Hannah Wilbert</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+  </main>
+  <div class="push"></div>
+</div>
+
+<footer>
+        <div class="container">
+          &copy; Copyright Hannah Wilbert 2018
+    </div>
+  </footer>
+</body>
 </html>
